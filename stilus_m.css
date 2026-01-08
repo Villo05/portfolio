@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(kepek/hatter1.jpg);
+    background-attachment: fixed;
+    height: auto;
+    background-size: cover;
+    color: black;
+    line-height: 1.5;
+}
+
+
+main {
+    max-width: 1200px;
+    border-width: 500px;
+    margin: auto;
+    background-color: #f5f0e6; 
+    padding: 20px;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-areas:
+        "h"
+        "n"
+        "ar"
+        "f";
+    gap: 20px;
+}
+
+header {
+    grid-area: h;    
+    height: 250px;
+    background-size: cover;
+    border-radius: 8px;
+    }
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+nav {
+    grid-area: n;
+    display: block;
+}
+
+nav ul {
+    font-size: 15pt;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 200px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7a6a4f;
+}
+
+
+article {
+    grid-area: ar;
+    padding: 20px;
+
+}
+
+article img {
+    height: auto;
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    float: left;
+}
+
+#en {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #eed9c4;
+    border-radius: 8px;
+    font-size: 20pt;
+
+}
+
+
+#rolam1, #rolam2 {
+    text-align: justify;
+    font-size: 13pt;
+}
+
+
+footer {
+    grid-area: f;
+    text-align: center;
+    font-size: 10pt;
+    
+}
+
+@media screen and (max-width: 900px) {
+    main, header, article {
+        min-width: 90%;
+    }}
